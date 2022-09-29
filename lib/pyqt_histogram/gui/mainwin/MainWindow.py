@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import (
     QGraphicsScene
 )
 
-from pyqt_histogram.gui.histogram import Histogram
+from pyqt_histogram.gui.histogramview import HistogramView
 
 class MainWindow(QMainWindow, Ui_MainWindowRoot):
 
@@ -17,6 +17,4 @@ class MainWindow(QMainWindow, Ui_MainWindowRoot):
 
         #self.histogram_scene = QGraphicsScene()
         #self.histogram_graphics.setScene(self.histogram_scene)
-        #self.histogram = Histogram(self.histogram_scene)
-
-        print(self.histogram.geometry().size())
+        #self.histogram = HistogramView(self.histogram_scene)

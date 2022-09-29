@@ -17,7 +17,7 @@ class Ui_MainWindowRoot(object):
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.histogram = Histogram(self.centralwidget)
+        self.histogram = HistogramView(self.centralwidget)
         self.histogram.setObjectName("histogram")
         self.horizontalLayout.addWidget(self.histogram)
         MainWindowRoot.setCentralWidget(self.centralwidget)
@@ -35,4 +35,4 @@ class Ui_MainWindowRoot(object):
     def retranslateUi(self, MainWindowRoot):
         _translate = QtCore.QCoreApplication.translate
         MainWindowRoot.setWindowTitle(_translate("MainWindowRoot", "Histo Test"))
-from pyqt_histogram.gui.histogram import Histogram
+from pyqt_histogram.gui.histogramview import HistogramView

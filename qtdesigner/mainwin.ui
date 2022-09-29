@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="Histogram" name="histogram" native="true"/>
+     <widget class="HistogramView" name="histogram" native="true"/>
     </item>
    </layout>
   </widget>
@@ -34,7 +34,7 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>Histogram</class>
+   <class>HistogramView</class>
    <extends>QWidget</extends>
    <header>pyqt_histogram.gui.histogram</header>
    <container>1</container>
